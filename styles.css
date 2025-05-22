@@ -1,0 +1,434 @@
+/* --- GENERAL --- */
+body {
+  font-family: 'Exo 2', 'Rajdhani', 'Arial', sans-serif;
+  background: linear-gradient(135deg, #1a0d2e 0%, #16213e 25%, #0f0c29 50%, #24243e 75%, #1a0d2e 100%);
+  background-size: 400% 400%;
+  animation: gradientShift 8s ease infinite;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  text-shadow: 0 0 10px rgba(138, 43, 226, 0.5);
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 20% 80%, rgba(138, 43, 226, 0.1) 0%, transparent 50%),
+              radial-gradient(circle at 80% 20%, rgba(186, 85, 211, 0.1) 0%, transparent 50%),
+              radial-gradient(circle at 40% 40%, rgba(147, 112, 219, 0.05) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* --- HEADER FUTURISTA --- */
+header {
+  background: linear-gradient(135deg, #6a0dad 0%, #8a2be2 25%, #9932cc 50%, #ba55d3 75%, #da70d6 100%);
+  background-size: 300% 300%;
+  animation: headerGlow 6s ease infinite;
+  color: white;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 
+      0 8px 32px rgba(138, 43, 226, 0.6),
+      inset 0 1px 0 rgba(255, 255, 255, 0.2),
+      0 0 50px rgba(186, 85, 211, 0.4);
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 900;
+  font-size: 2.5rem;
+  text-shadow: 
+      0 0 20px rgba(255, 255, 255, 0.8),
+      0 0 40px rgba(138, 43, 226, 0.8),
+      0 0 60px rgba(186, 85, 211, 0.6);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  position: relative;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.3);
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  animation: headerSweep 3s infinite;
+}
+
+@keyframes headerGlow {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+@keyframes headerSweep {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+
+/* --- NAVEGACIÓN CYBERPUNK --- */
+nav {
+  background: linear-gradient(135deg, #4b0082 0%, #663399 50%, #8a2be2 100%);
+  background-size: 200% 200%;
+  animation: navPulse 4s ease infinite;
+  position: relative;
+  box-shadow: 
+      0 4px 20px rgba(139, 69, 19, 0.5),
+      inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+nav::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #ff00ff, #00ffff, #ff00ff);
+  animation: neonLine 2s linear infinite;
+}
+
+@keyframes navPulse {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+@keyframes neonLine {
+  0%, 100% { transform: translateX(-100%); opacity: 0; }
+  50% { transform: translateX(0%); opacity: 1; }
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  margin: 0 20px;
+  position: relative;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  padding: 18px 25px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 
+      0 0 10px rgba(255, 255, 255, 0.5),
+      0 0 20px rgba(138, 43, 226, 0.7);
+  position: relative;
+  overflow: hidden;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+nav a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+nav a:hover::before {
+  left: 100%;
+}
+
+nav a:hover {
+  background: linear-gradient(135deg, #8a2be2 0%, #da70d6 100%);
+  border-radius: 15px;
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 
+      0 10px 30px rgba(138, 43, 226, 0.6),
+      0 0 50px rgba(218, 112, 214, 0.4),
+      inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  text-shadow: 
+      0 0 15px rgba(255, 255, 255, 1),
+      0 0 30px rgba(138, 43, 226, 1),
+      0 0 45px rgba(186, 85, 211, 0.8);
+}
+
+/* --- MAIN SECTIONS HOLOGRÁFICAS --- */
+main {
+  padding: 40px;
+  position: relative;
+}
+
+section {
+  background: linear-gradient(135deg, 
+      rgba(255, 255, 255, 0.15) 0%, 
+      rgba(138, 43, 226, 0.1) 25%,
+      rgba(186, 85, 211, 0.05) 50%,
+      rgba(218, 112, 214, 0.1) 75%,
+      rgba(255, 255, 255, 0.1) 100%);
+  backdrop-filter: blur(20px);
+  padding: 35px;
+  margin: 30px auto;
+  max-width: 900px;
+  border-left: 6px solid transparent;
+  border-image: linear-gradient(45deg, #ff00ff, #00ffff, #ff00ff) 1;
+  border-radius: 20px;
+  box-shadow: 
+      0 8px 40px rgba(138, 43, 226, 0.3),
+      inset 0 1px 0 rgba(255, 255, 255, 0.2),
+      0 0 60px rgba(186, 85, 211, 0.2);
+  animation: sectionFloat 6s ease-in-out infinite;
+  position: relative;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+
+section::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(from 0deg, transparent, rgba(138, 43, 226, 0.1), transparent);
+  animation: sectionRotate 8s linear infinite;
+  z-index: -1;
+}
+
+@keyframes sectionFloat {
+  0%, 100% { transform: translateY(0px) rotateX(0deg); }
+  50% { transform: translateY(-10px) rotateX(2deg); }
+}
+
+@keyframes sectionRotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+section h2 {
+  color: #ffffff;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 900;
+  font-size: 2.8rem;
+  text-shadow: 
+      0 0 20px rgba(255, 255, 255, 1),
+      0 0 40px rgba(138, 43, 226, 1),
+      0 0 60px rgba(186, 85, 211, 0.8),
+      0 0 80px rgba(218, 112, 214, 0.6);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  background: linear-gradient(45deg, #ff00ff, #00ffff, #ff00ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: textGlow 3s ease infinite alternate;
+}
+
+section h3 {
+  color: #da70d6;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  text-shadow: 
+      0 0 15px rgba(218, 112, 214, 0.8),
+      0 0 30px rgba(138, 43, 226, 0.6);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  animation: textPulse 2s ease infinite alternate;
+}
+
+section p {
+  font-family: 'Exo 2', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.8;
+  color: #e6e6fa;
+  text-shadow: 
+      0 0 10px rgba(230, 230, 250, 0.5),
+      0 0 20px rgba(138, 43, 226, 0.3);
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+@keyframes textGlow {
+  0% { 
+      text-shadow: 
+          0 0 20px rgba(255, 255, 255, 1),
+          0 0 40px rgba(138, 43, 226, 1),
+          0 0 60px rgba(186, 85, 211, 0.8);
+  }
+  100% { 
+      text-shadow: 
+          0 0 30px rgba(255, 255, 255, 1),
+          0 0 60px rgba(138, 43, 226, 1),
+          0 0 90px rgba(186, 85, 211, 1);
+  }
+}
+
+@keyframes textPulse {
+  0% { transform: scale(1); opacity: 0.8; }
+  100% { transform: scale(1.02); opacity: 1; }
+}
+
+/* --- FOOTER ESPACIAL --- */
+footer {
+  background: linear-gradient(135deg, #2e0854 0%, #4b0082 50%, #6a0dad 100%);
+  background-size: 300% 300%;
+  animation: footerWave 8s ease infinite;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-shadow: 
+      0 0 15px rgba(255, 255, 255, 0.8),
+      0 0 30px rgba(138, 43, 226, 0.8);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  box-shadow: 
+      0 -8px 32px rgba(138, 43, 226, 0.5),
+      inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  border-top: 3px solid rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+}
+
+footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #ff00ff, #00ffff, #ff00ff, #00ffff);
+  animation: footerNeon 3s linear infinite;
+}
+
+@keyframes footerWave {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+@keyframes footerNeon {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+/* --- ANIMACIÓN PRINCIPAL --- */
+@keyframes slideIn {
+  from {
+      opacity: 0;
+      transform: translateY(50px) rotateX(10deg);
+      filter: blur(5px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0px) rotateX(0deg);
+      filter: blur(0px);
+  }
+}
+
+/* --- EFECTOS INTERACTIVOS --- */
+section:hover {
+  transform: translateY(-15px) rotateX(5deg);
+  box-shadow: 
+      0 15px 60px rgba(138, 43, 226, 0.5),
+      inset 0 1px 0 rgba(255, 255, 255, 0.3),
+      0 0 100px rgba(186, 85, 211, 0.4);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* --- RESPONSIVE FUTURISTA --- */
+@media (max-width: 600px) {
+  nav ul {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  nav li {
+      margin: 15px 0;
+  }
+  
+  header {
+      font-size: 2rem;
+      padding: 20px;
+  }
+  
+  section h2 {
+      font-size: 2.2rem;
+  }
+  
+  section h3 {
+      font-size: 1.6rem;
+  }
+  
+  section p {
+      font-size: 1.1rem;
+  }
+  
+  main {
+      padding: 20px;
+  }
+  
+  section {
+      padding: 25px;
+      margin: 20px auto;
+  }
+}
+
+/* --- EFECTOS DE PARTÍCULAS --- */
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+      radial-gradient(2px 2px at 20px 30px, rgba(255, 255, 255, 0.3), transparent),
+      radial-gradient(2px 2px at 40px 70px, rgba(138, 43, 226, 0.4), transparent),
+      radial-gradient(1px 1px at 90px 40px, rgba(186, 85, 211, 0.3), transparent),
+      radial-gradient(1px 1px at 130px 80px, rgba(218, 112, 214, 0.2), transparent),
+      radial-gradient(2px 2px at 160px 30px, rgba(255, 255, 255, 0.2), transparent);
+  background-repeat: repeat;
+  background-size: 200px 100px;
+  animation: particleFloat 20s linear infinite;
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0.6;
+}
+
+@keyframes particleFloat {
+  0% { transform: translateY(0px) translateX(0px); }
+  33% { transform: translateY(-200px) translateX(100px); }
+  66% { transform: translateY(-400px) translateX(-100px); }
+  100% { transform: translateY(-600px) translateX(0px); }
+}
