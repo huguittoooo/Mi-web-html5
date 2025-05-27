@@ -27,6 +27,9 @@ El motivo principal es que, aunque las redes sociales son importantes, tener una
 - Los botones y enlaces tienen efectos visuales sencillos que mejoran la experiencia del usuario.  
 - La web es responsive, se adapta bien a móviles y tabletas.
 
+![image](https://github.com/user-attachments/assets/d8c986a5-1fed-48eb-800b-01cebc0627e7)
+
+
 ---
 
 ## Estructura del layout
