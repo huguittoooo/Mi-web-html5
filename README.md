@@ -45,21 +45,32 @@ El motivo principal es que, aunque las redes sociales son importantes, tener una
 ### Quién soy  
 Explico mi trayectoria futbolística desde infantil, pasando por equipos como Singuerlin, Damm y actualmente en el Juvenil A del Español, donde soy extremo y máximo goleador.
 
+![image](https://github.com/user-attachments/assets/a5d75c76-f077-4f1b-94d0-4f8afdce6780)
+
 ### Entrenador  
 Soy un entrenador joven con conocimientos sólidos en tácticas, preparación física y motivación. Me esfuerzo por sacar lo mejor de mis jugadores y formar equipos competitivos y unidos.
+
+![image](https://github.com/user-attachments/assets/e93ce784-3833-41fd-a183-19d1ac5cc14f)
 
 ### Eventos  
 Anuncio un próximo evento de prueba de nivel para formar un equipo infantil potente en la categoría preferente del Español. Se invita a niños con alto nivel a presentarse.
 
+![image](https://github.com/user-attachments/assets/c03bc966-33b1-4963-96bb-4d6dc6173a6f)
+
 ### Dietas  
 Recomiendo dietas equilibradas, adaptadas al fútbol, para mantener energía, fuerza y buena recuperación muscular. La alimentación es fundamental para el rendimiento deportivo.
+
+![image](https://github.com/user-attachments/assets/ad33d4e4-ebd7-446e-a2f5-8685395ef641)
+
 
 ### Contacto  
 Incluyo mis redes sociales y un teléfono de contacto:  
 - Instagram: @hugovalleg  
 - Teléfono: +34 612 345 678  
 - Twitter: @hugovalleg  
-- TikTok: @hugovalleg  
+- TikTok: @hugovalleg
+- 
+![image](https://github.com/user-attachments/assets/44739321-6d57-4a00-bc1b-6fbb10253d99)
 
 ---
 
