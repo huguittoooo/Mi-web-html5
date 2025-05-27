@@ -3,513 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hugo Vallejo - Historia de una Promesa | Fútbol Pasión</title>
+    <title>Hugo Vallejo García - Futbolista y Entrenador</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="main-header">
-        <div class="header-container">
+    <div class="container">
+        <header class="header">
             <div class="logo">
-                <h1><i class="fas fa-futbol"></i> Fútbol <span>Pasión</span></h1>
+                <h1>Hugo Vallejo García</h1>
+                <p>Futbolista & Entrenador</p>
             </div>
-            <nav class="main-nav">
-                <div class="menu-toggle">
-                    <i class="fas fa-bars"></i>
+        </header>
+
+        <nav class="navigation">
+            <ul class="nav-tabs">
+                <li><a href="index.html" class="tab-link active" data-tab="inicio"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="quien soy.html" class="tab-link" data-tab="quien-soy"><i class="fas fa-user"></i> Quién Soy</a></li>
+                <li><a href="entrenador.html" class="tab-link" data-tab="entrenador"><i class="fas fa-whistle"></i> Como Entrenador</a></li>
+                <li><a href="eventos.html" class="tab-link" data-tab="eventos"><i class="fas fa-calendar"></i> Eventos</a></li>
+                <li><a href="dietas.html" class="tab-link" data-tab="dietas"><i class="fas fa-apple-alt"></i> Dietas</a></li>
+                <li><a href="contacto.html" class="tab-link" data-tab="contacto"><i class="fas fa-envelope"></i> Contacto</a></li>
+            </ul>
+        </nav>
+
+        <main class="main-content">  
+            <section id="inicio" class="tab-content active">
+                <div class="hero-section">
+                    <div class="hero-content">
+                        <h2>Bienvenido a mi página personal</h2>
+                        <p class="hero-subtitle">Jugador del Juvenil A del RCD Español</p>
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">5+</span>
+                                <span class="stat-label">Años de experiencia</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">3</span>
+                                <span class="stat-label">Equipos profesionales</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">1</span>
+                                <span class="stat-label">Posición: Extremo</span>
+                            </div>
+                        </div>
+                        <div class="cta-buttons">
+                            <button class="btn btn-primary" onclick="showTab('quien-soy')">Conoce mi historia</button>
+                            <button class="btn btn-secondary" onclick="showTab('contacto')">Contactar</button>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="player-silhouette">
+                            <i class="fas fa-futbol"></i>
+                        </div>
+                    </div>
                 </div>
-                <ul class="nav-links">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="quienes-somos.html">Quiénes Somos</a></li>
-                    <li><a href="#">Noticias</a></li>
-                    <li><a href="#" class="active">Jugadores</a></li>
-                    <li><a href="#">Competiciones</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <section class="player-banner">
-        <div class="player-banner-overlay"></div>
-        <div class="player-banner-content">
-            <h1 class="animated-title">HUGO VALLEJO</h1>
-            <p class="player-tagline">El extremo que está conquistando el fútbol base catalán</p>
-        </div>
-    </section>
-
-    <main class="player-profile">
-        <div class="container">
-            <div class="profile-grid">
-                <aside class="player-sidebar">
-                    <div class="player-card">
-                        <div class="player-image">
-                            <img src="/api/placeholder/400/500" alt="Hugo Vallejo">
-                        </div>
-                        <div class="player-info">
-                            <h2>Hugo Vallejo</h2>
-                            <div class="player-details">
-                                <div class="detail-item">
-                                    <span class="detail-label">Posición:</span>
-                                    <span class="detail-value">Extremo</span>
-                                </div>
-                                <div class="detail-item">
-                                    <span class="detail-label">Edad:</span>
-                                    <span class="detail-value">17 años</span>
-                                </div>
-                                <div class="detail-item">
-                                    <span class="detail-label">Equipo actual:</span>
-                                    <span class="detail-value">RCD Espanyol Juvenil</span>
-                                </div>
-                                <div class="detail-item">
-                                    <span class="detail-label">División:</span>
-                                    <span class="detail-value">División de Honor Juvenil</span>
-                                </div>
-                                <div class="detail-item">
-                                    <span class="detail-label">Categoría:</span>
-                                    <span class="detail-value">Juvenil de primer año</span>
-                                </div>
-                                <div class="detail-item">
-                                    <span class="detail-label">Pierna dominante:</span>
-                                    <span class="detail-value">Derecha</span>
-                                </div>
-                                <div class="detail-item">
-                                    <span class="detail-label">Altura:</span>
-                                    <span class="detail-value">1,78 m</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="player-statistics">
-                        <h3>Estadísticas Temporada 2024/2025</h3>
-                        <div class="stats-grid">
-                            <div class="stat-item">
-                                <div class="stat-number">18</div>
-                                <div class="stat-label">Partidos</div>
-                            </div>
-                            <div class="stat-item">
-                                <div class="stat-number">9</div>
-                                <div class="stat-label">Goles</div>
-                            </div>
-                            <div class="stat-item">
-                                <div class="stat-number">12</div>
-                                <div class="stat-label">Asistencias</div>
-                            </div>
-                            <div class="stat-item">
-                                <div class="stat-number">1.620</div>
-                                <div class="stat-label">Minutos</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="player-teams">
-                        <h3>Trayectoria</h3>
-                        <ul class="teams-list">
-                            <li>
-                                <div class="team-logo">
-                                    <img src="/api/placeholder/60/60" alt="RCD Espanyol">
-                                </div>
-                                <div class="team-info">
-                                    <div class="team-name">RCD Espanyol</div>
-                                    <div class="team-period">2024 - Actualidad</div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="team-logo">
-                                    <img src="/api/placeholder/60/60" alt="Girona FC">
-                                </div>
-                                <div class="team-info">
-                                    <div class="team-name">Girona FC</div>
-                                    <div class="team-period">2022 - 2024</div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="team-logo">
-                                    <img src="/api/placeholder/60/60" alt="CF Damm">
-                                </div>
-                                <div class="team-info">
-                                    <div class="team-name">CF Damm</div>
-                                    <div class="team-period">2020 - 2022</div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="team-logo">
-                                    <img src="/api/placeholder/60/60" alt="CF Badalona">
-                                </div>
-                                <div class="team-info">
-                                    <div class="team-name">CF Badalona</div>
-                                    <div class="team-period">2017 - 2020</div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </aside>
-
-                <div class="player-content">
-                    <section class="biography-section fade-in-element">
-                        <h2 class="section-title">La historia de Hugo Vallejo</h2>
-                        <div class="section-content">
-                            <div class="feature-image">
-                                <img src="/api/placeholder/800/400" alt="Hugo Vallejo en acción">
-                                <div class="image-caption">Hugo Vallejo durante un partido con el RCD Espanyol Juvenil</div>
-                            </div>
-                            
-                            <h3>De los barrios humildes a División de Honor</h3>
-                            <p>Hugo Vallejo nació en un barrio humilde de Badalona, donde su pasión por el fútbol se manifestó desde muy temprana edad. Hijo de una familia trabajadora con recursos limitados, Hugo encontró en el balón no solo una forma de diversión, sino también una vía de escape y, finalmente, su camino hacia un futuro mejor.</p>
-                            
-                            <p>Desde los 6 años, Hugo pasaba horas en el parque cercano a su casa, perfeccionando su técnica con un balón desgastado. Sus padres, conscientes del talento que mostraba su hijo, hicieron grandes esfuerzos para inscribirlo en la escuela local de fútbol, a pesar de las dificultades económicas que enfrentaban.</p>
-                            
-                            <p>A los 10 años, su talento natural llamó la atención de los ojeadores del CF Badalona, que no dudaron en incorporarlo a sus categorías inferiores. En este club comenzó realmente su formación futbolística estructurada, compitiendo en División de Honor Infantil, donde ya destacaba como extremo por su velocidad, regate y capacidad goleadora.</p>
-
-                            <div class="quote-box">
-                                <p>"El fútbol no era solo un juego para mí, era mi oportunidad para ayudar a mi familia y construir un futuro mejor. Cada vez que salía al campo, recordaba de dónde venía y eso me daba fuerzas para luchar por cada balón."</p>
-                                <span class="quote-author">— Hugo Vallejo</span>
-                            </div>
-                            
-                            <h3>Ascenso meteórico y liderazgo</h3>
-                            <p>El talento de Hugo no pasó desapercibido y rápidamente empezó a destacar en todas las categorías. Siempre jugó en las divisiones más altas de cada categoría por edad, convirtiéndose en una referencia del fútbol base catalán. Su capacidad de liderazgo natural lo llevó a portar el brazalete de capitán en casi todos los equipos donde ha jugado.</p>
-                            
-                            <p>Tras brillar en el CF Badalona, el prestigioso CF Damm se fijó en él y lo incorporó a su proyecto. Este paso fue fundamental en su carrera, ya que la Damm es conocida por su excelente formación de jóvenes talentos. Allí continuó su progresión, enfrentándose a los mejores equipos de España en torneos nacionales e internacionales, lo que elevó considerablemente su nivel de juego.</p>
-                            
-                            <p>Su siguiente parada fue el Girona FC, donde permaneció dos temporadas cruciales en su desarrollo. En este club no solo mejoró técnicamente, sino que también comenzó a entender aspectos tácticos más complejos del juego. Sus actuaciones llamaron la atención de varios ojeadores de equipos importantes, incluido el RCD Espanyol, donde actualmente milita en su División de Honor Juvenil.</p>
-
-                            <div class="timeline">
-                                <div class="timeline-item">
-                                    <div class="timeline-dot"></div>
-                                    <div class="timeline-content">
-                                        <h4>2017-2020: CF Badalona</h4>
-                                        <p>Inicio en División de Honor Infantil. Primera experiencia en competición de alto nivel.</p>
-                                    </div>
-                                </div>
-                                <div class="timeline-item">
-                                    <div class="timeline-dot"></div>
-                                    <div class="timeline-content">
-                                        <h4>2020-2022: CF Damm</h4>
-                                        <p>Salto de calidad y exposición a competiciones nacionales de prestigio.</p>
-                                    </div>
-                                </div>
-                                <div class="timeline-item">
-                                    <div class="timeline-dot"></div>
-                                    <div class="timeline-content">
-                                        <h4>2022-2024: Girona FC</h4>
-                                        <p>Desarrollo táctico y técnico en un club profesional. Primeros contactos con metodología profesional.</p>
-                                    </div>
-                                </div>
-                                <div class="timeline-item">
-                                    <div class="timeline-dot"></div>
-                                    <div class="timeline-content">
-                                        <h4>2024-Actualidad: RCD Espanyol</h4>
-                                        <p>Juvenil División de Honor. A las puertas del fútbol profesional.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <h3>El primer contrato y el cambio de vida</h3>
-                            <p>El salto al RCD Espanyol marcó un antes y un después en la vida de Hugo. A sus 17 años, firmó su primer contrato semiprofesional con el club perico, que le permite cobrar 1.000 euros mensuales. Este ingreso, aunque modesto en el mundo del fútbol profesional, ha transformado radicalmente la economía familiar.</p>
-                            
-                            <p>Con su primer sueldo, Hugo ayudó a sus padres a saldar algunas deudas pendientes y mejorar las condiciones de la vivienda familiar. Este aspecto financiero, aunque importante, es solo una parte de la motivación de Hugo, quien siempre ha enfatizado que su verdadera pasión es el juego en sí mismo y el deseo de llegar a la élite del fútbol español e internacional.</p>
-                            
-                            <div class="stats-comparison">
-                                <div class="stat-category">
-                                    <div class="stat-bar" style="width: 90%">
-                                        <span class="stat-label">Velocidad</span>
-                                        <span class="stat-value">9/10</span>
-                                    </div>
-                                </div>
-                                <div class="stat-category">
-                                    <div class="stat-bar" style="width: 85%">
-                                        <span class="stat-label">Regate</span>
-                                        <span class="stat-value">8.5/10</span>
-                                    </div>
-                                </div>
-                                <div class="stat-category">
-                                    <div class="stat-bar" style="width: 75%">
-                                        <span class="stat-label">Definición</span>
-                                        <span class="stat-value">7.5/10</span>
-                                    </div>
-                                </div>
-                                <div class="stat-category">
-                                    <div class="stat-bar" style="width: 80%">
-                                        <span class="stat-label">Pase</span>
-                                        <span class="stat-value">8/10</span>
-                                    </div>
-                                </div>
-                                <div class="stat-category">
-                                    <div class="stat-bar" style="width: 70%">
-                                        <span class="stat-label">Defensa</span>
-                                        <span class="stat-value">7/10</span>
-                                    </div>
-                                </div>
-                                <div class="stat-category">
-                                    <div class="stat-bar" style="width: 95%">
-                                        <span class="stat-label">Actitud</span>
-                                        <span class="stat-value">9.5/10</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <h3>La vida como extremo prometedor</h3>
-                            <p>Como extremo, Hugo Vallejo se caracteriza por su explosividad, velocidad y capacidad para desbordar en el uno contra uno. Ambidiestro, aunque con preferencia por la pierna derecha, puede jugar en ambas bandas con igual eficacia. Su visión de juego le permite no solo generar situaciones de gol para sí mismo, sino también asistir a sus compañeros, lo que lo convierte en un jugador completo ofensivamente.</p>
-                            
-                            <p>Los entrenadores que han trabajado con él destacan su mentalidad competitiva y su ética de trabajo. Hugo siempre es el primero en llegar a los entrenamientos y el último en marcharse, dedicando tiempo extra a perfeccionar aspectos específicos de su juego como el centro o el disparo a portería.</p>
-                        </div>
-                    </section>
-
-                    <section class="routine-section">
-                        <h2 class="section-title">Rutina diaria y nutrición</h2>
-                        <div class="routine-grid">
-                            <div class="routine-card">
-                                <div class="routine-header">
-                                    <i class="fas fa-calendar-day"></i>
-                                    <h3>Un día en la vida de Hugo</h3>
-                                </div>
-                                <div class="routine-content">
-                                    <ul class="routine-schedule">
-                                        <li>
-                                            <span class="time">07:00</span>
-                                            <div class="activity">
-                                                <h4>Despertar y desayuno</h4>
-                                                <p>Avena con frutas, huevos y zumo natural</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <span class="time">08:30</span>
-                                            <div class="activity">
-                                                <h4>Estudios</h4>
-                                                <p>Bachillerato (modalidad adaptada para deportistas)</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <span class="time">13:30</span>
-                                            <div class="activity">
-                                                <h4>Comida</h4>
-                                                <p>Proteína magra, carbohidratos complejos y verduras</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <span class="time">15:30</span>
-                                            <div class="activity">
-                                                <h4>Preparación para entrenamiento</h4>
-                                                <p>Desplazamiento a la Ciudad Deportiva</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <span class="time">16:30</span>
-                                            <div class="activity">
-                                                <h4>Entrenamiento principal</h4>
-                                                <p>Sesión táctica, técnica y física con el equipo</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <span class="time">19:00</span>
-                                            <div class="activity">
-                                                <h4>Entrenamiento extra</h4>
-                                                <p>Trabajo específico de finalización o gimnasio</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <span class="time">20:30</span>
-                                            <div class="activity">
-                                                <h4>Cena</h4>
-                                                <p>Proteína, ensalada y carbohidratos</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <span class="time">22:00</span>
-                                            <div class="activity">
-                                                <h4>Descanso</h4>
-                                                <p>Tiempo de recuperación y sueño</p>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="diet-plan">
-                                <div class="diet-header">
-                                    <i class="fas fa-utensils"></i>
-                                    <h3>Plan de alimentación</h3>
-                                </div>
-                                <div class="diet-content">
-                                    <div class="meal">
-                                        <h4>Desayuno</h4>
-                                        <ul>
-                                            <li>Avena con leche baja en grasa</li>
-                                            <li>Frutas (plátano, manzana o bayas)</li>
-                                            <li>2-3 huevos (principalmente claras)</li>
-                                            <li>Zumo natural o agua</li>
-                                        </ul>
-                                    </div>
-                                    <div class="meal">
-                                        <h4>Media mañana</h4>
-                                        <ul>
-                                            <li>Yogur griego</li>
-                                            <li>Frutos secos (almendras, nueces)</li>
-                                            <li>Fruta fresca</li>
-                                        </ul>
-                                    </div>
-                                    <div class="meal">
-                                        <h4>Comida</h4>
-                                        <ul>
-                                            <li>Pollo, pavo o pescado (150-200g)</li>
-                                            <li>Arroz integral o pasta integral</li>
-                                            <li>Verduras variadas (brócoli, espinacas, zanahorias)</li>
-                                            <li>Aceite de oliva (cantidad moderada)</li>
-                                        </ul>
-                                    </div>
-                                    <div class="meal">
-                                        <h4>Merienda pre-entrenamiento</h4>
-                                        <ul>
-                                            <li>Pieza de fruta</li>
-                                            <li>Batido proteico o barra energética</li>
-                                            <li>Pan integral con aguacate o pavo</li>
-                                        </ul>
-                                    </div>
-                                    <div class="meal">
-                                        <h4>Post-entrenamiento</h4>
-                                        <ul>
-                                            <li>Batido de recuperación (proteínas + carbohidratos)</li>
-                                            <li>Plátano o dátiles</li>
-                                        </ul>
-                                    </div>
-                                    <div class="meal">
-                                        <h4>Cena</h4>
-                                        <ul>
-                                            <li>Salmón, atún o carne magra</li>
-                                            <li>Patata al horno o batata</li>
-                                            <li>Ensalada grande variada</li>
-                                            <li>Infusión relajante</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="diet-note">
-                                    <p><strong>Nota:</strong> Este plan alimenticio está supervisado por el nutricionista del club y adaptado a sus necesidades específicas como extremo, donde se requiere explosividad y resistencia.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="training-focus">
-                            <h3>Entrenamiento específico como extremo</h3>
-                            <div class="training-grid">
-                                <div class="training-item">
-                                    <div class="training-icon">
-                                        <i class="fas fa-running"></i>
-                                    </div>
-                                    <h4>Velocidad</h4>
-                                    <p>Sprints de 10, 20 y 30 metros. Ejercicios de aceleración con cambios de dirección. Trabajo con escaleras de coordinación.</p>
-                                </div>
-                                <div class="training-item">
-                                    <div class="training-icon">
-                                        <i class="fas fa-people-arrows"></i>
-                                    </div>
-                                    <h4>Regate</h4>
-                                    <p>Circuitos de conos con diferentes tipos de fintas. Situaciones de 1vs1 en espacios reducidos. Trabajo de técnica individual.</p>
-                                </div>
-                                <div class="training-item">
-                                    <div class="training-icon">
-                                        <i class="fas fa-bullseye"></i>
-                                    </div>
-                                    <h4>Finalización</h4>
-                                    <p>Disparos desde diferentes posiciones. Ejercicios de definición tras regate. Remates en movimiento y a centros.</p>
-                                </div>
-                                <div class="training-item">
-                                    <div class="training-icon">
-                                        <i class="fas fa-arrows-alt"></i>
-                                    </div>
-                                    <h4>Centros</h4>
-                                    <p>Trabajo específico de centros rasos, medios y por elevación. Precisión en situaciones de presión. Centros tras combinación.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="future-section">
-                        <h2 class="section-title">Proyección y futuro</h2>
-                        <div class="section-content">
-                            <p>A sus 17 años, Hugo Vallejo se encuentra en un momento crucial de su carrera. Los ojeadores de varios clubes importantes de La Liga ya han mostrado interés en su evolución, y se rumorea que incluso equipos extranjeros han enviado informes sobre su progresión.</p>
-                            
-                            <p>El objetivo a corto plazo para Hugo es consolidarse en el equipo Juvenil del Espanyol y, si su rendimiento lo permite, dar el salto al filial durante la próxima temporada. A partir de ahí, el sueño del debut con el primer equipo no parece tan lejano.</p>
-                            
-                            <p>Su sueldo actual de 1.000 euros mensuales podría incrementarse significativamente si firma un contrato profesional en los próximos años. Mientras tanto, Hugo sigue centrado en mejorar día a día, compaginando su desarrollo futbolístico con sus estudios de Bachillerato, consciente de la importancia de tener una formación académica sólida.</p>
-
-                            <div class="coach-testimonial">
-                                <div class="testimonial-image">
-                                    <img src="/api/placeholder/150/150" alt="Entrenador del Espanyol">
-                                </div>
-                                <div class="testimonial-text">
-                                    <p>"Hugo tiene ese don especial que no se puede enseñar. La combinación de su talento natural con su ética de trabajo y humildad lo convierten en un diamante en bruto. Si continúa con esta progresión y mentalidad, tiene todo para llegar al fútbol de élite."</p>
-                                    <cite>— Carlos Martínez, Entrenador del Juvenil División de Honor del RCD Espanyol</cite>
-                                </div>
-                            </div>
-
-                            <h3>Objetivos a corto plazo</h3>
-                            <ul class="goals-list">
-                                <li>Consolidarse como titular indiscutible en el Juvenil División de Honor</li>
-                                <li>Aumentar sus estadísticas goleadoras y de asistencias</li>
-                                <li>Entrenar ocasionalmente con el filial del RCD Espanyol</li>
-                                <li>Completar con éxito sus estudios de Bachillerato</li>
-                            </ul>
-
-                            <h3>Sueños y ambiciones</h3>
-                            <p>Aunque Hugo mantiene los pies en el suelo, no oculta sus sueños. Debutar en Primera División, jugar en grandes estadios y, algún día, representar a la selección española son objetivos que motivan su trabajo diario. Sin embargo, su mentalidad es la de ir paso a paso, ganándose cada oportunidad con esfuerzo y dedicación.</p>
-                            
-                            <p>Por el momento, cada mes que recibe su salario de 1.000 euros recuerda de dónde viene y todo lo que ha tenido que superar para llegar hasta aquí. Esa memoria es su mayor motivación para seguir progresando en un mundo tan competitivo como el fútbol profesional.</p>
-
-                            <div class="cta-box">
-                                <h3>¿Quieres seguir la trayectoria de Hugo Vallejo?</h3>
-                                <p>Mantente al día con las últimas noticias, estadísticas y momentos destacados de esta joven promesa del fútbol español.</p>
-                                <div class="social-follow">
-                                    <a href="#" class="btn btn-social"><i class="fab fa-instagram"></i> Seguir en Instagram</a>
-                                    <a href="#" class="btn btn-social"><i class="fab fa-twitter"></i> Seguir en Twitter</a>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="gallery-section">
-                        <h2 class="section-title">Galería de imágenes</h2>
-                        <div class="gallery-grid">
-                            <div class="gallery-item">
-                                <img src="/api/placeholder/400/300" alt="Hugo Vallejo en acción">
-                            </div>
-                            <div class="gallery-item">
-                                <img src="/api/placeholder/400/300" alt="Hugo Vallejo celebrando un gol">
-                            </div>
-                            <div class="gallery-item">
-                                <img src="/api/placeholder/400/300" alt="Hugo Vallejo entrenando">
-                            </div>
-                            <div class="gallery-item">
-                                <img src="/api/placeholder/400/300" alt="Hugo Vallejo con el equipo">
-                            </div>
-                            <div class="gallery-item">
-                                <img src="/api/placeholder/400/300" alt="Hugo Vallejo con la equipación del Espanyol">
-                            </div>
-                            <div class="gallery-item">
-                                <img src="/api/placeholder/400/300" alt="Hugo Vallejo en un partido importante">
-                            </div>
-                        </div>
-                    </section>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <section class="related-players">
-        <div class="container">
-            <h2 class="section-title">Otras promesas del futuro</h2>
-            <div class="players-grid">
-                <div class="player-preview">
-                    <div class="player-preview-image">
-                        <img src="/api/placeholder/300/400" alt="Jugador promesa">
-                    </div>
-                    <h3>Marcos Rodríguez</h3>
-                    <span class="player-position">Mediocentro</span>
-                    <span class="player-club">FC Barcelona Juvenil</span>
-                    <a href="#" class="btn btn-outline">Ver perfil</a>
-                </div>
-                <div class="player-preview">
-                    <div class="player-preview-image">
-                        <img src="/api/placeholder/
+            </section>
