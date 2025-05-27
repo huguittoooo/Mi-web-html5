@@ -3,104 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hugo Vallejo García - Futbolista y Entrenador</title>
+    <title>Hugo Vallejo García - Contacto</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <div class="logo">
-                <h1>Hugo Vallejo García</h1>
-                <p>Futbolista & Entrenador</p>
-            </div>
-        </header>
+    <header>
+        <h1>Hugo Vallejo García</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="quien-soy.html">Quién Soy</a></li>
+            <li><a href="entrenador.html">Entrenador</a></li>
+            <li><a href="eventos.html">Eventos</a></li>
+            <li><a href="dietas.html">Dietas</a></li>
+            <li><a class="active" href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
 
-        <nav class="navigation">
-            <ul class="nav-tabs">
-                <li><a href="index.html" class="tab-link active" data-tab="inicio"><i class="fas fa-home"></i> Inicio</a></li>
-                <li><a href="quien soy.html" class="tab-link" data-tab="quien-soy"><i class="fas fa-user"></i> Quién Soy</a></li>
-                <li><a href="entrenador.html" class="tab-link" data-tab="entrenador"><i class="fas fa-whistle"></i> Como Entrenador</a></li>
-                <li><a href="eventos.html" class="tab-link" data-tab="eventos"><i class="fas fa-calendar"></i> Eventos</a></li>
-                <li><a href="dietas.html" class="tab-link" data-tab="dietas"><i class="fas fa-apple-alt"></i> Dietas</a></li>
-                <li><a href="contacto.html" class="tab-link" data-tab="contacto"><i class="fas fa-envelope"></i> Contacto</a></li>
-            </ul>
-        </nav>
-<section id="contacto" class="tab-content">
-                <div class="content-header">
-                    <h2>Contacto</h2>
-                    <div class="section-divider"></div>
+    <main>
+        <section class="card">
+            <h2 class="section-title">Contacto</h2>
+            <p>Puedes contactarme a través de cualquiera de estos medios para consultas, colaboraciones o información sobre mis eventos y servicios.</p>
+        </section>
+        
+        <div class="contact-grid">
+            <section class="contact-info">
+                <h3 class="section-title">Información de Contacto</h3>
+                
+                <div class="contact-item">
+                    <h4><i class="fas fa-phone-alt"></i> Teléfono</h4>
+                    <p>+34 612 345 678</p>
                 </div>
-                <div class="contact-content">
-                    <div class="contact-intro">
-                        <h3>¡Conecta conmigo!</h3>
-                        <p>¿Tienes alguna consulta, propuesta o simplemente quieres seguir mi trayectoria? No dudes en contactarme a través de cualquiera de estas plataformas.</p>
-                    </div>
-                    
-                    <div class="social-links">
-                        <a href="#" class="social-card instagram">
-                            <i class="fab fa-instagram"></i>
-                            <div class="social-info">
-                                <h4>Instagram</h4>
-                                <p>@hugovallejogarcia</p>
-                                <span>Sígueme para ver mi día a día</span>
-                            </div>
-                        </a>
-                        
-                        <a href="#" class="social-card twitter">
-                            <i class="fab fa-twitter"></i>
-                            <div class="social-info">
-                                <h4>Twitter</h4>
-                                <p>@HugoVallejo10</p>
-                                <span>Noticias y actualizaciones</span>
-                            </div>
-                        </a>
-                        
-                        <a href="#" class="social-card tiktok">
-                            <i class="fab fa-tiktok"></i>
-                            <div class="social-info">
-                                <h4>TikTok</h4>
-                                <p>@hugovallejogarcia</p>
-                                <span>Contenido divertido y skills</span>
-                            </div>
-                        </a>
-                        
-                        <a href="tel:+34612345678" class="social-card phone">
-                            <i class="fas fa-phone"></i>
-                            <div class="social-info">
-                                <h4>Teléfono</h4>
-                                <p>+34 612 345 678</p>
-                                <span>Para contacto profesional</span>
-                            </div>
-                        </a>
-                    </div>
-                    
-                    <div class="contact-form">
-                        <h4>Envíame un mensaje</h4>
-                        <form>
-                            <div class="form-group">
-                                <input type="text" placeholder="Tu nombre" required>
-                                <i class="fas fa-user"></i>
-                            </div>
-                            <div class="form-group">
-                                <input type="email" placeholder="Tu email" required>
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" placeholder="Asunto">
-                                <i class="fas fa-tag"></i>
-                            </div>
-                            <div class="form-group">
-                                <textarea placeholder="Tu mensaje" rows="5" required></textarea>
-                                <i class="fas fa-comment"></i>
-                            </div>
-                            <button type="submit" class="btn btn-primary">
-                                <i class="fas fa-paper-plane"></i>
-                                Enviar Mensaje
-                            </button>
-                        </form>
-                    </div>
+                
+                <div class="contact-item">
+                    <h4><i class="fas fa-envelope"></i> Email</h4>
+                    <p>hugo.vallejo@example.com</p>
+                </div>
+                
+                <div class="contact-item">
+                    <h4><i class="fas fa-map-marker-alt"></i> Ubicación</h4>
+                    <p>Barcelona, España</p>
+                </div>
+                
+                <h3 class="section-title">Redes Sociales</h3>
+                
+                <div class="social-links">
+                    <a href="https://instagram.com/hugovallejo" class="social-link" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com/hugovallejo" class="social-link" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://tiktok.com/@hugovallejo" class="social-link" target="_blank">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="https://facebook.com/hugovallejo" class="social-link" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
                 </div>
             </section>
-        </main>
+            
+            <section class="contact-form">
+                <h3 class="section-title">Formulario de Contacto</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Asunto:</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Mensaje:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn">Enviar Mensaje</button>
+                </form>
+            </section>
+        </div>
+        
+        <section class="card">
+            <h3 class="section-title">Horario de Atención</h3>
+            <p>Estoy disponible para consultas y reuniones en los siguientes horarios:</p>
+            
+            <div class="schedule">
+                <div class="schedule-item">
+                    <h4><i class="far fa-clock"></i> Lunes a Viernes</h4>
+                    <p>10:00 - 13:00 y 16:00 - 19:00</p>
+                </div>
+                
+                <div class="schedule-item">
+                    <h4><i class="far fa-clock"></i> Sábados</h4>
+                    <p>10:00 - 14:00 (solo por cita previa)</p>
+                </div>
+                
+                <div class="schedule-item">
+                    <h4><i class="fas fa-calendar-times"></i> Domingos y Festivos</h4>
+                    <p>Cerrado (excepto eventos deportivos)</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Hugo Vallejo García. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.body.classList.add('loaded');
+            
+            // Transición al cambiar de página
+            document.querySelectorAll('nav a').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    if (this.getAttribute('href').startsWith('http') || 
+                        this.getAttribute('href') === '#' || 
+                        this.classList.contains('active')) return;
+                    
+                    e.preventDefault();
+                    document.body.style.opacity = '0';
+                    document.body.style.transform = 'translateY(20px)';
+                    
+                    setTimeout(() => {
+                        window.location.href = this.getAttribute('href');
+                    }, 500);
+                });
+            });
+            
+            // Manejo del formulario
+            const contactForm = document.getElementById('contactForm');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    alert('Gracias por tu mensaje. Te responderé lo antes posible.');
+                    this.reset();
+                });
+            }
+        });
+    </script>
+</body>
+</html>

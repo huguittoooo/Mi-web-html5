@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hugo Vallejo García - Quién Soy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Hugo Vallejo García</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a class="active" href="quien-soy.html">Quién Soy</a></li>
+            <li><a href="entrenador.html">Entrenador</a></li>
+            <li><a href="eventos.html">Eventos</a></li>
+            <li><a href="dietas.html">Dietas</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="card">
+            <h2 class="section-title">Mi Historia</h2>
+            
+            <div class="profile-section">
+                <div class="profile-img">
+                    <img src="images/hugo-perfil.jpg" alt="Hugo Vallejo García">
+                </div>
+                
+                <div class="profile-info">
+                    <p>Me llamo Hugo Vallejo García, soy jugador del juvenil A del Español y he pasado por muchos equipos en mi trayectoria futbolística.</p>
+                    <p>Mi posición natural es extremo, destacando por mi velocidad, regate y capacidad goleadora. Actualmente soy un jugador intocable en la plantilla y el máximo goleador del equipo.</p>
+                </div>
+            </div>
+            
+            <h3 class="section-title">Trayectoria Deportiva</h3>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h4>Infantil (Primer Año)</h4>
+                    <p>Singuerlín de Segunda División</p>
+                    <p>Mis inicios en el fútbol competitivo, donde desarrollé mis primeras habilidades técnicas.</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <h4>Cadete (Primer Año)</h4>
+                    <p>Damm en Preferente</p>
+                    <p>Primera experiencia en un club de mayor nivel, con un salto cualitativo importante en mi formación.</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <h4>Cadete (Segundo Año)</h4>
+                    <p>Ascenso a División de Honor con el Damm</p>
+                    <p>Temporada de consolidación donde demostré mi capacidad para competir al más alto nivel juvenil.</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <h4>Actualidad</h4>
+                    <p>RCD Español - División de Honor</p>
+                    <p>Dando el salto a uno de los grandes clubes del fútbol español, donde he encontrado mi mejor versión como futbolista.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Hugo Vallejo García. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.body.classList.add('loaded');
+            
+            document.querySelectorAll('nav a').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    if (this.getAttribute('href').startsWith('http') || 
+                        this.getAttribute('href') === '#' || 
+                        this.classList.contains('active')) return;
+                    
+                    e.preventDefault();
+                    document.body.style.opacity = '0';
+                    document.body.style.transform = 'translateY(20px)';
+                    
+                    setTimeout(() => {
+                        window.location.href = this.getAttribute('href');
+                    }, 500);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

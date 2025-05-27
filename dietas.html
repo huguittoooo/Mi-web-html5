@@ -3,125 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hugo Vallejo García - Futbolista y Entrenador</title>
+    <title>Hugo Vallejo García - Dietas</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <div class="logo">
-                <h1>Hugo Vallejo García</h1>
-                <p>Futbolista & Entrenador</p>
-            </div>
-        </header>
+    <header>
+        <h1>Hugo Vallejo García</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="quien-soy.html">Quién Soy</a></li>
+            <li><a href="entrenador.html">Entrenador</a></li>
+            <li><a href="eventos.html">Eventos</a></li>
+            <li><a class="active" href="dietas.html">Dietas</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
 
-        <nav class="navigation">
-            <ul class="nav-tabs">
-                <li><a href="index.html" class="tab-link active" data-tab="inicio"><i class="fas fa-home"></i> Inicio</a></li>
-                <li><a href="quien soy.html" class="tab-link" data-tab="quien-soy"><i class="fas fa-user"></i> Quién Soy</a></li>
-                <li><a href="entrenador.html" class="tab-link" data-tab="entrenador"><i class="fas fa-whistle"></i> Como Entrenador</a></li>
-                <li><a href="eventos.html" class="tab-link" data-tab="eventos"><i class="fas fa-calendar"></i> Eventos</a></li>
-                <li><a href="dietas.html" class="tab-link" data-tab="dietas"><i class="fas fa-apple-alt"></i> Dietas</a></li>
-                <li><a href="contacto.html" class="tab-link" data-tab="contacto"><i class="fas fa-envelope"></i> Contacto</a></li>
-            </ul>
-        </nav>
-<section id="dietas" class="tab-content">
-                <div class="content-header">
-                    <h2>Nutrición para Futbolistas</h2>
-                    <div class="section-divider"></div>
+    <main>
+        <section class="card">
+            <h2 class="section-title">Recomendaciones Nutricionales</h2>
+            <p>La alimentación es un pilar fundamental en el rendimiento deportivo. Aquí encontrarás recomendaciones dietéticas específicas para futbolistas, basadas en mi experiencia y asesoramiento de nutricionistas profesionales.</p>
+        </section>
+        
+        <section class="card">
+            <h3 class="section-title">Dieta Base para Futbolistas</h3>
+            
+            <div class="diet-plan">
+                <div class="meal-card">
+                    <h4 class="meal-time"><i class="fas fa-sun"></i> Desayuno</h4>
+                    <p>Energía para empezar el día:</p>
+                    <ul>
+                        <li>Hidratos complejos: Pan integral, avena o cereales sin azúcar</li>
+                        <li>Proteínas: Huevos, jamón serrano o pavo, queso fresco</li>
+                        <li>Grasas saludables: Aguacate o frutos secos</li>
+                        <li>Fruta fresca de temporada</li>
+                        <li>Lácteo: Leche, yogur o bebida vegetal</li>
+                    </ul>
                 </div>
-                <div class="diet-content">
-                    <div class="diet-intro">
-                        <h3>Alimentación Óptima para el Rendimiento</h3>
-                        <p>Una nutrición adecuada es fundamental para maximizar el rendimiento en el fútbol. Aquí te comparto las mejores recomendaciones dietéticas para futbolistas.</p>
-                    </div>
-                    
-                    <div class="diet-categories">
-                        <div class="diet-card">
-                            <i class="fas fa-clock"></i>
-                            <h4>Pre-Entrenamiento</h4>
-                            <ul>
-                                <li>Carbohidratos complejos (avena, pasta integral)</li>
-                                <li>Proteínas magras (pollo, pescado)</li>
-                                <li>Frutas (plátano, manzana)</li>
-                                <li>Hidratación abundante</li>
-                            </ul>
-                            <span class="timing">2-3 horas antes</span>
-                        </div>
-                        
-                        <div class="diet-card">
-                            <i class="fas fa-running"></i>
-                            <h4>Durante el Ejercicio</h4>
-                            <ul>
-                                <li>Bebidas isotónicas</li>
-                                <li>Agua en pequeñas cantidades</li>
-                                <li>Geles energéticos (entrenamientos largos)</li>
-                                <li>Frutas deshidratadas</li>
-                            </ul>
-                            <span class="timing">Cada 15-20 min</span>
-                        </div>
-                        
-                        <div class="diet-card">
-                            <i class="fas fa-battery-full"></i>
-                            <h4>Post-Entrenamiento</h4>
-                            <ul>
-                                <li>Proteínas de alta calidad</li>
-                                <li>Carbohidratos de absorción rápida</li>
-                                <li>Lácteos o batidos proteicos</li>
-                                <li>Rehidratación inmediata</li>
-                            </ul>
-                            <span class="timing">30 min después</span>
-                        </div>
-                    </div>
-                    
-                    <div class="daily-recommendations">
-                        <h4>Plan Nutricional Diario Recomendado</h4>
-                        <div class="meal-plan">
-                            <div class="meal">
-                                <h5><i class="fas fa-sun"></i> Desayuno</h5>
-                                <p>Avena con frutas, yogur griego, huevos y tostadas integrales</p>
-                            </div>
-                            <div class="meal">
-                                <h5><i class="fas fa-apple-alt"></i> Media Mañana</h5>
-                                <p>Frutos secos, frutas frescas y hidratación</p>
-                            </div>
-                            <div class="meal">
-                                <h5><i class="fas fa-utensils"></i> Almuerzo</h5>
-                                <p>Proteínas magras, carbohidratos complejos y verduras</p>
-                            </div>
-                            <div class="meal">
-                                <h5><i class="fas fa-cookie-bite"></i> Merienda</h5>
-                                <p>Batido proteico, frutas o bocadillo saludable</p>
-                            </div>
-                            <div class="meal">
-                                <h5><i class="fas fa-moon"></i> Cena</h5>
-                                <p>Pescado, verduras al vapor y carbohidratos ligeros</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="hydration-tips">
-                        <h4>Consejos de Hidratación</h4>
-                        <div class="tips-grid">
-                            <div class="tip">
-                                <i class="fas fa-tint"></i>
-                                <p>2-3 litros de agua diarios mínimo</p>
-                            </div>
-                            <div class="tip">
-                                <i class="fas fa-thermometer-half"></i>
-                                <p>Aumentar ingesta en días calurosos</p>
-                            </div>
-                            <div class="tip">
-                                <i class="fas fa-stopwatch"></i>
-                                <p>Hidratación constante durante entrenamientos</p>
-                            </div>
-                            <div class="tip">
-                                <i class="fas fa-balance-scale"></i>
-                                <p>Controlar pérdida de peso por sudoración</p>
-                            </div>
-                        </div>
-                    </div>
+                
+                <div class="meal-card">
+                    <h4 class="meal-time"><i class="fas fa-apple-alt"></i> Media Mañana</h4>
+                    <p>Mantenimiento energético:</p>
+                    <ul>
+                        <li>Fruta + frutos secos</li>
+                        <li>Batido de proteínas (opcional en días de entrenamiento intenso)</li>
+                        <li>Barrita energética casera</li>
+                    </ul>
                 </div>
-            </section>
+                
+                <div class="meal-card">
+                    <h4 class="meal-time"><i class="fas fa-utensils"></i> Comida</h4>
+                    <p>Recuperación y preparación:</p>
+                    <ul>
+                        <li>Proteína magra: Pollo, pavo, pescado blanco o azul</li>
+                        <li>Hidratos: Arroz, pasta integral, quinoa o patata</li>
+                        <li>Verduras variadas (crudas o cocinadas)</li>
+                        <li>Grasas saludables: Aceite de oliva virgen extra</li>
+                    </ul>
+                </div>
+                
+                <div class="meal-card">
+                    <h4 class="meal-time"><i class="fas fa-coffee"></i> Merienda</h4>
+                    <p>Pre-entrenamiento:</p>
+                    <ul>
+                        <li>Hidratos de absorción rápida: Plátano, dátiles</li>
+                        <li>Proteína ligera: Yogur griego, queso fresco</li>
+                        <li>Bebida isotónica (en días de mucho calor o entrenamiento intenso)</li>
+                    </ul>
+                </div>
+                
+                <div class="meal-card">
+                    <h4 class="meal-time"><i class="fas fa-moon"></i> Cena</h4>
+                    <p>Recuperación nocturna:</p>
+                    <ul>
+                        <li>Proteína: Pescado, huevo o carne magra</li>
+                        <li>Verduras variadas</li>
+                        <li>Hidratos en menor cantidad que en comida</li>
+                        <li>Grasas saludables: Aceite de oliva, aguacate</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section class="card">
+            <h3 class="section-title">Recomendaciones Específicas</h3>
+            
+            <div class="recommendations">
+                <div class="recommendation-card">
+                    <h4><i class="fas fa-calendar-day"></i> Día de Partido</h4>
+                    <ul>
+                        <li>Desayuno completo 3 horas antes</li>
+                        <li>Hidratación constante con bebida isotónica</li>
+                        <li>Comida ligera 2-3 horas antes del partido</li>
+                        <li>Recuperación post-partido: Proteína + hidratos en ratio 1:3</li>
+                    </ul>
+                </div>
+                
+                <div class="recommendation-card">
+                    <h4><i class="fas fa-dumbbell"></i> Día de Entrenamiento</h4>
+                    <ul>
+                        <li>Aumentar hidratos complejos en las comidas principales</li>
+                        <li>Merienda pre-entreno con hidratos de rápida absorción</li>
+                        <li>Recuperación post-entreno: Batido de proteína + plátano</li>
+                    </ul>
+                </div>
+                
+                <div class="recommendation-card">
+                    <h4><i class="fas fa-bed"></i> Día de Descanso</h4>
+                    <ul>
+                        <li>Reducir ligeramente los hidratos</li>
+                        <li>Aumentar proteínas para recuperación muscular</li>
+                        <li>Mantener buena hidratación</li>
+                        <li>Incluir alimentos antiinflamatorios: cúrcuma, jengibre</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section class="card">
+            <h3 class="section-title">Alimentos Clave</h3>
+            
+            <div class="food-grid">
+                <div class="food-item">
+                    <h4><i class="fas fa-seedling"></i> Superalimentos</h4>
+                    <p>Avena, quinoa, brócoli, arándanos, nueces, salmón, aguacate, espinacas.</p>
+                </div>
+                
+                <div class="food-item">
+                    <h4><i class="fas fa-ban"></i> Evitar</h4>
+                    <p>Azúcares refinados, comida procesada, bebidas gaseosas, alcohol, exceso de fritos.</p>
+                </div>
+                
+                <div class="food-item">
+                    <h4><i class="fas fa-tint"></i> Hidratación</h4>
+                    <p>2-3 litros de agua al día, bebidas isotónicas solo en entrenamientos intensos o partidos.</p>
+                </div>
+                
+                <div class="food-item">
+                    <h4><i class="fas fa-capsules"></i> Suplementación</h4>
+                    <p>Solo bajo supervisión profesional: proteína whey, creatina, omega-3, vitamina D.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Hugo Vallejo García. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.body.classList.add('loaded');
+            
+            document.querySelectorAll('nav a').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    if (this.getAttribute('href').startsWith('http') || 
+                        this.getAttribute('href') === '#' || 
+                        this.classList.contains('active')) return;
+                    
+                    e.preventDefault();
+                    document.body.style.opacity = '0';
+                    document.body.style.transform = 'translateY(20px)';
+                    
+                    setTimeout(() => {
+                        window.location.href = this.getAttribute('href');
+                    }, 500);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

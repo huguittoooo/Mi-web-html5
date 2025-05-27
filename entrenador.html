@@ -3,76 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hugo Vallejo García - Futbolista y Entrenador</title>
+    <title>Hugo Vallejo García - Entrenador</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <div class="logo">
-                <h1>Hugo Vallejo García</h1>
-                <p>Futbolista & Entrenador</p>
+    <header>
+        <h1>Hugo Vallejo García</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="quien-soy.html">Quién Soy</a></li>
+            <li><a class="active" href="entrenador.html">Entrenador</a></li>
+            <li><a href="eventos.html">Eventos</a></li>
+            <li><a href="dietas.html">Dietas</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="card">
+            <h2 class="section-title">Mi Filosofía como Entrenador</h2>
+            <p>Soy un entrenador joven con conocimientos avanzados en metodología de entrenamiento y desarrollo de jugadores. Mi experiencia como futbolista en alto nivel me permite entender las necesidades reales de los jugadores y cómo sacar el máximo potencial de cada uno.</p>
+        </section>
+        
+        <section class="card">
+            <h3 class="section-title">Métodos de Entrenamiento</h3>
+            
+            <div class="training-methods">
+                <div class="method-card">
+                    <h4><i class="fas fa-running"></i> Técnica Individual</h4>
+                    <p>Enfoque en el desarrollo de habilidades específicas por posición, con especial atención al control del balón, regate y definición. Sesiones personalizadas según las características de cada jugador.</p>
+                    <ul>
+                        <li>Ejercicios específicos por posición</li>
+                        <li>Perfeccionamiento del gesto técnico</li>
+                        <li>Entrenamiento en situaciones reales de juego</li>
+                    </ul>
+                </div>
+                
+                <div class="method-card">
+                    <h4><i class="fas fa-chess"></i> Táctica Colectiva</h4>
+                    <p>Sistema de juego adaptable con énfasis en la transición defensa-ataque y la creación de espacios. Desarrollo de un modelo de juego claro pero flexible.</p>
+                    <ul>
+                        <li>Principios de juego ofensivos y defensivos</li>
+                        <li>Transiciones rápidas</li>
+                        <li>Rotaciones y creación de espacios</li>
+                    </ul>
+                </div>
+                
+                <div class="method-card">
+                    <h4><i class="fas fa-dumbbell"></i> Preparación Física</h4>
+                    <p>Programas personalizados según la posición y características del jugador, con monitorización constante del rendimiento. Enfoque en la prevención de lesiones.</p>
+                    <ul>
+                        <li>Planes individualizados</li>
+                        <li>Entrenamiento funcional</li>
+                        <li>Control de cargas y recuperación</li>
+                    </ul>
+                </div>
             </div>
-        </header>
-
-         <nav class="navigation">
-            <ul class="nav-tabs">
-                <li><a href="index.html" class="tab-link active" data-tab="inicio"><i class="fas fa-home"></i> Inicio</a></li>
-                <li><a href="quien soy.html" class="tab-link" data-tab="quien-soy"><i class="fas fa-user"></i> Quién Soy</a></li>
-                <li><a href="entrenador.html" class="tab-link" data-tab="entrenador"><i class="fas fa-whistle"></i> Como Entrenador</a></li>
-                <li><a href="eventos.html" class="tab-link" data-tab="eventos"><i class="fas fa-calendar"></i> Eventos</a></li>
-                <li><a href="dietas.html" class="tab-link" data-tab="dietas"><i class="fas fa-apple-alt"></i> Dietas</a></li>
-                <li><a href="contacto.html" class="tab-link" data-tab="contacto"><i class="fas fa-envelope"></i> Contacto</a></li>
-            </ul>
-        </nav>
-<section id="entrenador" class="tab-content">
-                <div class="content-header">
-                    <h2>Como Entrenador</h2>
-                    <div class="section-divider"></div>
+        </section>
+        
+        <section class="card">
+            <h3 class="section-title">Filosofía de Juego</h3>
+            
+            <div class="philosophy-grid">
+                <div class="philosophy-item">
+                    <h4><i class="fas fa-arrow-circle-right"></i> Posesión con propósito</h4>
+                    <p>No por tener el balón se crean oportunidades. Trabajamos la posesión con criterio, buscando siempre progresar y generar situaciones de peligro.</p>
                 </div>
-                <div class="coach-content">
-                    <div class="coach-intro">
-                        <h3>Joven pero con Experiencia</h3>
-                        <p>Soy un entrenador joven que tiene conocimientos de sobra adquiridos tanto en el campo como fuera de él.</p>
-                    </div>
-                    
-                    <div class="coaching-philosophy">
-                        <div class="philosophy-card">
-                            <i class="fas fa-brain"></i>
-                            <h4>Metodología Moderna</h4>
-                            <p>Aplico técnicas de entrenamiento actualizadas, combinando la experiencia tradicional con las nuevas metodologías del fútbol moderno.</p>
-                        </div>
-                        
-                        <div class="philosophy-card">
-                            <i class="fas fa-users"></i>
-                            <h4>Desarrollo Individual</h4>
-                            <p>Me enfoco en potenciar las habilidades únicas de cada jugador, adaptando el entrenamiento a sus fortalezas y áreas de mejora.</p>
-                        </div>
-                        
-                        <div class="philosophy-card">
-                            <i class="fas fa-tactics"></i>
-                            <h4>Táctica y Estrategia</h4>
-                            <p>Desarrollo sistemas de juego efectivos basados en el análisis del rival y las características de mi equipo.</p>
-                        </div>
-                        
-                        <div class="philosophy-card">
-                            <i class="fas fa-heart"></i>
-                            <h4>Mentalidad Ganadora</h4>
-                            <p>Inculco valores de esfuerzo, disciplina y compañerismo, fundamentales para el éxito tanto individual como colectivo.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="experience-highlights">
-                        <h4>Mi Experiencia Como Jugador Me Aporta:</h4>
-                        <ul class="highlights-list">
-                            <li><i class="fas fa-check"></i> Conocimiento directo de las necesidades del jugador moderno</li>
-                            <li><i class="fas fa-check"></i> Comprensión real de las presiones competitivas</li>
-                            <li><i class="fas fa-check"></i> Capacidad de conectar con jugadores jóvenes</li>
-                            <li><i class="fas fa-check"></i> Experiencia en diferentes categorías y niveles</li>
-                        </ul>
-                    </div>
+                
+                <div class="philosophy-item">
+                    <h4><i class="fas fa-bolt"></i> Presión alta tras pérdida</h4>
+                    <p>Recuperación inmediata del balón en campo rival para generar oportunidades en las transiciones.</p>
                 </div>
-            </section>
+                
+                <div class="philosophy-item">
+                    <h4><i class="fas fa-users"></i> Juego asociativo</h4>
+                    <p>Fomentamos el entendimiento entre jugadores, con movimientos coordinados y asociaciones que desequilibren al rival.</p>
+                </div>
+                
+                <div class="philosophy-item">
+                    <h4><i class="fas fa-random"></i> Adaptabilidad</h4>
+                    <p>Capacidad para modificar nuestro juego según las características del rival y las circunstancias del partido.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="card">
+            <h3 class="section-title">Desarrollo de Jugadores</h3>
+            
+            <div class="player-development">
+                <div class="development-step">
+                    <h4><i class="fas fa-search"></i> 1. Análisis Individual</h4>
+                    <p>Evaluación detallada de las fortalezas y áreas de mejora de cada jugador mediante observación directa y herramientas tecnológicas.</p>
+                </div>
+                
+                <div class="development-step">
+                    <h4><i class="fas fa-clipboard-list"></i> 2. Plan Personalizado</h4>
+                    <p>Diseño de un plan de desarrollo específico para cada jugador con objetivos claros y medibles.</p>
+                </div>
+                
+                <div class="development-step">
+                    <h4><i class="fas fa-chart-line"></i> 3. Seguimiento Continuo</h4>
+                    <p>Evaluación periódica del progreso con ajustes constantes para maximizar el rendimiento.</p>
+                </div>
+                
+                <div class="development-step">
+                    <h4><i class="fas fa-brain"></i> 4. Preparación Mental</h4>
+                    <p>Trabajo psicológico para competir al máximo nivel, gestionar la presión y mantener la concentración.</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
+    <footer>
+        <p>&copy; 2023 Hugo Vallejo García. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.body.classList.add('loaded');
+            
+            document.querySelectorAll('nav a').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    if (this.getAttribute('href').startsWith('http') || 
+                        this.getAttribute('href') === '#' || 
+                        this.classList.contains('active')) return;
+                    
+                    e.preventDefault();
+                    document.body.style.opacity = '0';
+                    document.body.style.transform = 'translateY(20px)';
+                    
+                    setTimeout(() => {
+                        window.location.href = this.getAttribute('href');
+                    }, 500);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
